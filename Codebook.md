@@ -22,7 +22,7 @@ The R script ```run_analysis.R``` has been implemented to accomplish 5 tasks giv
 - Since the activities were described by values 1-6, we updated those with information from *the activity_labels.txt*
 - The columns name have been updated to make them more readible. 
 - Eventually, a new dataset is created for each subject and activity type and is written to *tidy_data_set.txt*
-- ```ddply()``` from the **plyr** package is used to use the function ```colMeans()``` (You can install it via ```install.packages("plyr"))
+- ```ddply()``` from the **plyr** package is used to use the function ```colMeans()``` (You can install it via ```install.packages("plyr")```)
 
 ## Variables
 
@@ -31,12 +31,7 @@ The R script ```run_analysis.R``` has been implemented to accomplish 5 tasks giv
 - Merged datasets: *x_full*, *subject_full*, *y_full*
 - Correct names for *x_full*: *features* contains them and are applied to the column names in *mean_and_stdev_features*
 - *full_data*: merges *x_full*, *subject_full*, *y_full*
-- *full_data_average*: contains the average of each variable for each activity and each subject. This data will be later stored in **tidy_dataset.txt**
+- *full_data_average*: contains the average of each variable for each activity and each subject. This data will be later stored in *tidy_dataset.txt*
 
----
-title: "CodeBook.md"
-author: "YZuehlke"
-date: "22 November 2015"
----
 
 
