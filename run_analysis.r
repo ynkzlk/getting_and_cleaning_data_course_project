@@ -96,7 +96,6 @@ colnames(full_data) = colNames;
 ## Task 5
 ## From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-
 ## Use Plyr (=Tools for Splitting, Applying and Combining Data)
 library(plyr)
 full_data_average <- ddply(full_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
