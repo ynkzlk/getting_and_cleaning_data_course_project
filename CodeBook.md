@@ -1,9 +1,3 @@
----
-title: "CodeBook.md"
-author: "Yannik Zuehlke"
-date: "22 November 2015"
----
-
 # CodeBook
 
 ## General
@@ -19,7 +13,7 @@ The R script ```run_analysis.R``` has been implemented to accomplish 5 tasks giv
 ## Properties
 
 - The script sets the working directory in the programming. if you want to run it on your computer, you need to adjust the the variable
-```filename```
+*filename*
 - The raw data set is downloaded to the previously set working directory
 - It is also checked if the the downloaded zip has been already unzipped (in your corrent working directory)
 - Similiar data is merged by using the ```rbind()``` function.
@@ -38,4 +32,11 @@ The R script ```run_analysis.R``` has been implemented to accomplish 5 tasks giv
 - Correct names for *x_full*: *features* contains them and are applied to the column names in *mean_and_stdev_features*
 - *full_data*: merges *x_full*, *subject_full*, *y_full*
 - *full_data_average*: contains the average of each variable for each activity and each subject. This data will be later stored in **tidy_dataset.txt**
+
+---
+title: "CodeBook.md"
+author: "YZuehlke"
+date: "22 November 2015"
+---
+
 
