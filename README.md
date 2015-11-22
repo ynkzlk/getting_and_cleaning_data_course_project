@@ -11,6 +11,8 @@ sets (e.g. merge x_train and x_test, y_train and y_test, ..).
 
 What I did: I did the first option (it was reasonable to do it like this, since they have the same data structure). Eventually we needed to create a full data set in the end, please look at Task 4.
 
+For more details, please have a look in the CodeBook.md
+
 ## What does the script do?
 
 The R script ```run_analysis.R``` will do the following:
