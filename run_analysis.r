@@ -10,9 +10,10 @@ setwd("~/dev/r/coursera/Getting and Cleaning Data/getting_and_cleaning_data_cour
 
 filename <- "UCI_HAR_raw.zip"
 
+## Download the dataset. Link to the dataset was provided by Coursera in the course project description
 if (!file.exists(filename)){
-    fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-    download.file(fileURL, filename, method="curl")
+    URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    download.file(URL, filename, method="curl")
 }
 ## Unzip only if the .zip isn't already unzipped.
 if (!file.exists("UCI HAR Dataset")) { 
@@ -45,7 +46,7 @@ features <- read.table("UCI HAR Dataset/features.txt")
 # get only columns with 'mean' OR 'std' 
 mean_and_stdev_features <- grep(".*mean.*|.*std.*", features[, 2])
 
-# subset columns
+# subset columns in the merged dataset
 x_full <- x_full[, mean_and_stdev_features]
 
 
@@ -55,7 +56,7 @@ x_full <- x_full[, mean_and_stdev_features]
 # read activity labels file
 activitylabels <- read.table("UCI HAR Dataset/activity_labels.txt")
 
-# update datasets with correct activity labels
+# update the merged dataset with correct activity labels
 y_full[, 1] <- activitylabels[y_full[, 1], 2]
 
 
