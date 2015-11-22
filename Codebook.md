@@ -16,6 +16,7 @@ The R script ```run_analysis.R``` has been implemented to accomplish 5 tasks giv
 *filename*
 - The raw data set is downloaded to the previously set working directory
 - It is also checked if the the downloaded zip has been already unzipped (in your corrent working directory)
+- *URL* was given by Coursera Project in the Course Project description
 - Similiar data is merged by using the ```rbind()``` function.
 - Full data set is merged by using the ```cbind()``` function.
 - Mean and standard deviation has been extract with the correct names, retrieved from the *features.txt*
